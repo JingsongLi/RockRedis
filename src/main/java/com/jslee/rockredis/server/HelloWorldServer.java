@@ -1,6 +1,9 @@
 
-package io.grpc.examples.helloworld;
+package com.jslee.rockredis.server;
 
+import com.jslee.rockredis.grpc.GreeterGrpc;
+import com.jslee.rockredis.grpc.HelloReply;
+import com.jslee.rockredis.grpc.HelloRequest;
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
 import io.grpc.stub.StreamObserver;
@@ -51,7 +54,7 @@ public class HelloWorldServer {
   }
 
   /**
-   * Main launches the server from the command line.
+   * com.jslee.rockredis.test.Main launches the server from the command line.
    */
   public static void main(String[] args) throws IOException, InterruptedException {
     final HelloWorldServer server = new HelloWorldServer();

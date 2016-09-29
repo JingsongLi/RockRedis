@@ -29,8 +29,12 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package io.grpc.examples.helloworld;
+package com.jslee.rockredis.client;
 
+import com.jslee.rockredis.grpc.GreeterGrpc;
+import com.jslee.rockredis.grpc.HelloReply;
+import com.jslee.rockredis.grpc.HelloRequest;
+import com.jslee.rockredis.server.HelloWorldServer;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import io.grpc.StatusRuntimeException;

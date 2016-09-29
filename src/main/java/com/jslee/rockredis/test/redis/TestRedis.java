@@ -1,4 +1,4 @@
-package redis;
+package com.jslee.rockredis.test.redis;
 
 import java.util.HashMap;
 import java.util.Iterator;

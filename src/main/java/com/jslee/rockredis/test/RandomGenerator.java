@@ -1,3 +1,5 @@
+package com.jslee.rockredis.test;
+
 import java.util.Random;
 
 public class RandomGenerator {

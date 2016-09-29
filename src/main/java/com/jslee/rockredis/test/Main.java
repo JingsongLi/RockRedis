@@ -1,3 +1,5 @@
+package com.jslee.rockredis.test;
+
 import org.rocksdb.*;
 
 import java.io.File;
