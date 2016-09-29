@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.jslee.rockredis.grpc";
+option java_outer_classname = "ServerProto";
+
+package server;
+
+service RockServer {
+    rpc Set (SetRequest) returns (SetReply) {
+    }
+    rpc Get (GetRequest) returns (GetReply) {
+    }
+}
+
+message SetRequest {
+    string key = 1;
+    string value = 2;
+}
+
+message SetReply {
+}
+
+message GetRequest {
+    string key = 1;
+}
+
+message GetReply {
+    string value = 1;
+}

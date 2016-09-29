@@ -1,6 +1,9 @@
 package com.jslee.rockredis.test;
 
-import org.rocksdb.*;
+import org.rocksdb.Options;
+import org.rocksdb.RocksDB;
+import org.rocksdb.RocksDBException;
+import org.rocksdb.WriteOptions;
 
 import java.io.File;
 import java.io.IOException;
@@ -42,7 +45,7 @@ public class Main {
         System.out.println("use time: " + elapsedSeconds + " s");
         db_.close();
 
-        Thread.sleep(1000*60);
+        Thread.sleep(1000 * 60);
     }
 
     private static void getRandomKey(byte[] key, long range) {
@@ -50,7 +53,7 @@ public class Main {
     }
 
     private static void generateKeyFromLong(byte[] slice, long n) {
-        assert(n >= 0);
+        assert (n >= 0);
         int startPos = 0;
 
         for (int i = slice.length - 1; i >= startPos; --i) {

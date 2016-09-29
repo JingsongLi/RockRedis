@@ -1,2 +1,2 @@
-protoc -I=src/main/proto --java_out=src/main/java src/main/proto/helloworld.proto
-protoc --plugin=protoc-gen-grpc-java=/Users/jslee/IdeaProjects/grpc-java/compiler/build/exe/java_plugin/protoc-gen-grpc-java --grpc-java_out=src/main/java --proto_path=src/main/proto src/main/proto/helloworld.proto
+protoc -I=src/main/proto --java_out=src/main/java src/main/proto/server.proto
+protoc --plugin=protoc-gen-grpc-java=/Users/jslee/IdeaProjects/grpc-java/compiler/build/exe/java_plugin/protoc-gen-grpc-java --grpc-java_out=src/main/java --proto_path=src/main/proto src/main/proto/server.proto
