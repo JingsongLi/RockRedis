@@ -15,7 +15,7 @@ We use RocksDb to store data.
 Why RocksDb? TBD
 
 ##Distributed
-We build distributed system like Kafka.
+We build distributed system like Kafka(but plus master).
 ###Architecture
 ![RockRedis Architecture](docs/images/RockRedis.png)
 ###Consistency
