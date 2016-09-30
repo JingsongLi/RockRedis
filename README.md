@@ -14,3 +14,16 @@ It support:
 We use RocksDb to store data. 
 Why RocksDb? TBD
 
+##Distributed
+We build distributed system like Kafka.
+###Architecture
+![RockRedis Architecture](docs/images/RockRedis.png)
+###Consistency
+- Strong consistency: sync every time
+- Eventually consistency: support snapshot(checkpoint)
+###Grpc
+use grpc in inter-process communication for auth/stream/across languages/protobuf
+
+##RoadMap
+TBD
+
