@@ -18,9 +18,11 @@ Why RocksDb? TBD
 We build distributed system like Kafka(but plus master).
 ###Architecture
 ![RockRedis Architecture](docs/images/RockRedis.png)
+
 ###Consistency
 - Strong consistency: sync every time
 - Eventually consistency: support snapshot(checkpoint)
+
 ###Grpc
 use grpc in inter-process communication for auth/stream/across languages/protobuf
 
