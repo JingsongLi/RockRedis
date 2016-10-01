@@ -11,7 +11,8 @@ It support:
 - k max(v) get add
 - message deliver queue
 - TTL support
-We use RocksDb to store data. 
+
+We use RocksDb to store data.   
 Why RocksDb? TBD
 
 ##Distributed
